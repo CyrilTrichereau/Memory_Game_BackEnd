@@ -1,0 +1,44 @@
+{
+  "name": "ctch_dev_api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API for my portfolio, for handling forms and emails",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CyrilTrichereau/CtchDevAPI.git"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "homepage": "https://ctch.dev",
+  "bugs": {
+    "url": "https://github.com/CyrilTrichereau/CtchDevAPI/issues",
+    "email": "contact@ctch.dev"
+  },
+  "author": {
+    "name": "Cyril Trichereau",
+    "email": "contact@ctch.dev",
+    "portfolio": "https://ctch.dev/",
+    "github": "https://github.com/CyrilTrichereau/",
+    "linkedin": "https://www.linkedin.com/in/cyril-trichereau-4b36a1b5/"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mariadb": "^2.5.5",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-alpha.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.3.0"
+  }
+}
