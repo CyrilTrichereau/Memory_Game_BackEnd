@@ -6,16 +6,14 @@ const sendFormToContactCtchDev = require("../utils/sendFormToContactCtchDev.emai
 // Routes
 module.exports = {
   storeAndEmail: async (req, res) => {
-    let formObject = req.body;
     // Params
-    const name = formObject.name;
-    const email = formObject.email;
-    const text = formObject.text;
+    const name = req.body.name;
+    const email = req.body.email;
+    const text = req.body.text;
     let company = "";
-    if (formObject.company) {
-      company = formObject.company;
+    if (req.body.company) {
+      company = req.body.company;
     }
-
     // If One information is missing
     if (name == null || email == null || text == null) {
       return res.status(400).json({ error: "missing parameters" });
@@ -46,7 +44,7 @@ module.exports = {
         sgMail.setApiKey(process.env.SENDGRID_API_KEY);
         let response = await sgMail.send(emailToSend);
         return res
-          .status(201)
+          .status(200)
           .json({ message: "email sent !", response: response });
       } catch (err) {
         return res.status(500).json({ error: "Cannot send email " + err });
