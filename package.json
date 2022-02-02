@@ -1,23 +1,11 @@
 {
-  "name": "ctch_dev_api",
+  "name": "oclock_memory_game_api",
   "version": "1.0.0",
-  "private": true,
-  "description": "API for my portfolio, for handling forms and emails",
+  "description": "Technical Test for Web Developer Full Stack ",
+  "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/CyrilTrichereau/CtchDevAPI.git"
-  },
-  "main": "server.js",
-  "engines": {
-    "node": "16.13.0"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "homepage": "https://ctch.dev",
-  "bugs": {
-    "url": "https://github.com/CyrilTrichereau/CtchDevAPI/issues",
-    "email": "contact@ctch.dev"
+    "url": "https://github.com/CyrilTrichereau/OClock_Memory_Game_BackEnd.git"
   },
   "author": {
     "name": "Cyril Trichereau",
@@ -27,8 +15,13 @@
     "linkedin": "https://www.linkedin.com/in/cyril-trichereau-4b36a1b5/"
   },
   "license": "ISC",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "@sendgrid/mail": "^7.6.0",
     "body-parser": "^1.19.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",

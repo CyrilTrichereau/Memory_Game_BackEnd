@@ -29,20 +29,10 @@ server.use((req, res, next) => {
   next();
 });
 
-// Body Parser Configuration
-server.use(bodyParser.json({ limit: "50mb" }));
-server.use(
-  bodyParser.urlencoded({
-    limit: "50mb",
-    extended: true,
-    parameterLimit: 50000,
-  })
-);
-
 // Test Route ( main entrance )
 server.get("/", (req, res) => {
   res.setHeader("Content-Type", "text/html");
-  res.status(200).send("<h1>Welcome to Ctch.dev API</h1>");
+  res.status(200).send("<h1>Welcome to O'Clock Game API</h1>");
 });
 
 // Call api router

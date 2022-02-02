@@ -1,6 +1,6 @@
-# 🚀 Welcome to Ctch.dev API REST !
+# 🚀 Welcome to O'Clock Game API REST !
 
-**API for my portfolio, for handling forms and emails ! Enjoy !!**
+**API for Memory Game, a technical test for O'Clock !!**
 
 **_------------------_**
 **_------------------_**
@@ -10,7 +10,7 @@
 **1st:** Clone the repository at this URL :
 
 ```
-https://github.com/CyrilTrichereau/CtchDevAPI.git
+https://github.com/CyrilTrichereau/OClock_Memory_Game_BackEnd.git
 ```
 
 **2nd:** Install dependencies : from within the project folder, run `npm install`.
@@ -23,10 +23,6 @@ npm install
 
 ```env
 NODE_ENV= (development/production)
-
-SENDGRID_USER_EMAIL=
-SENDGRID_USER_PASSWORD=
-SENDGRID_API_KEY=
 
 DEV_DATA_BASE_NAME=
 DEV_DATA_BASE_USER=
