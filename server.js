@@ -3,7 +3,6 @@ require("dotenv").config();
 const express = require("express");
 const helmet = require("helmet");
 const bodyParser = require("body-parser");
-const path = require("path");
 const apiRouter = require("./apiRouter").router;
 
 // Instantiate server
@@ -28,6 +27,16 @@ server.use((req, res, next) => {
   );
   next();
 });
+
+// Body Parser Configuration
+server.use(bodyParser.json({ limit: "50mb" }));
+server.use(
+  bodyParser.urlencoded({
+    limit: "50mb",
+    extended: true,
+    parameterLimit: 50000,
+  })
+);
 
 // Test Route ( main entrance )
 server.get("/", (req, res) => {

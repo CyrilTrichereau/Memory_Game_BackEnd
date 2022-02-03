@@ -1,3 +1,6 @@
+// Config file for sequelize
+// Use this file for connection with database
+// There is three environment : development, test and production
 require("dotenv").config();
 module.exports = {
   development: {
